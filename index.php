@@ -1,14 +1,11 @@
-<?php
-setcookie('value', 100);
-?>
-<html>
-	<body>
-		<?php
-		$cookie =$_COOKIE['value"];
-		print "クッキーの値は".$cookie."です<br/>;
-		?>
-		<a href="cookie2.php">ページ２へ</a>
-	</body>
-</html>
-		
-
+<table border="1" cellspacing="0"> 
+ <?php
+  for($a=1; $a<=9; $a++){
+		echo'<tr>';
+		for($b=1; $b<=9; $b++){
+			echo '<td>'.$a * $b .'</td>';
+		}
+		echo'</tr>';
+	}
+  ?>
+</table>
